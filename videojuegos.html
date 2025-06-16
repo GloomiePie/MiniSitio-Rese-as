@@ -10,6 +10,10 @@
 </head>
 
 <body>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="btn-menu" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+    </label>
     <aside class="sidebar">
         <h2>Reseñas</h2>
         <nav>
@@ -23,68 +27,78 @@
     </aside>
 
     <main class="contenido">
-        <h1>Reseñas de Videojuegos</h1>
-        <p>Descubre los juegos más populares y jugados del ultimo año.</p>
+        <header>
+            <h1>Reseñas de Videojuegos</h1>
+            <p>Descubre los juegos más populares y jugados del ultimo año.</p>
+        </header>
 
-        <section class="reseña-destacada">
-            <img src="images/videojuego1.jpg" alt="Portada de The Legend of Zelda: Tears of the Kingdom"
-                class="portada" />
-            <div class="contenido-reseña">
-                <h2>The Legend of Zelda: Tears of the Kingdom</h2>
-                <p>Una secuela monumental que expande el mundo abierto de Hyrule con nuevas mecánicas de construcción y
-                    exploración vertical.</p>
-                <div class="estrellas">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                </div>
-                <a class="enlace" href="https://www.metacritic.com/game/the-legend-of-zelda-tears-of-the-kingdom/"
-                    target="_blank">Leer más</a>
-            </div>
-        </section>
-
-        <section class="lista-reseñas">
-            <div class="reseña-lista">
-                <img src="images/videojuego2.jpg" alt="Portada de Elden Ring" class="portada" />
+        <section class="tarjetas-destacadas">
+            <a href="https://www.metacritic.com/game/the-legend-of-zelda-tears-of-the-kingdom/" class="tarjeta">
+                <img src="images/videojuego1.jpg" alt="Portada de The Legend of Zelda: Tears of the Kingdom"
+                    class="portada" />
                 <div class="contenido-reseña">
-                    <h2>Elden Ring</h2>
-                    <p>Una colaboración épica entre FromSoftware y George R. R. Martin. Combina dificultad, lore y mundo
-                        abierto de forma magistral.</p>
-                    <div class="estrellas">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <a class="enlace" href="https://www.metacritic.com/game/elden-ring/" target="_blank">Leer más</a>
-                </div>
-            </div>
-
-            <div class="reseña-lista">
-                <img src="images/videojuego3.jpg" alt="Portada de Hollow Knight" class="portada" />
-                <div class="contenido-reseña">
-                    <h2>Hollow Knight</h2>
-                    <p>Un metroidvania oscuro y desafiante con un arte 2D hermoso y una ambientación melancólica que te
-                        atrapa desde el primer momento.</p>
-                    <div class="estrellas">
+                    <h2>The Legend of Zelda: Tears of the Kingdom</h2>
+                    <p>Una secuela monumental que expande el mundo abierto de Hyrule con nuevas mecánicas de
+                        construcción y
+                        exploración vertical.</p>
+                    <p class="estrellas">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star-half"></i>
-                    </div>
-                    <a class="enlace" href="https://www.metacritic.com/game/hollow-knight/" target="_blank">Leer más</a>
+                    </p>
                 </div>
-            </div>
+            </a>
+
+            <a href="https://www.metacritic.com/game/elden-ring/" class="tarjeta">
+                <img src="images/videojuego2.jpg" alt="Portada de Elden Ring" class="portada" />
+                <div class="contenido-reseña">
+                    <h2>Elden Ring</h2>
+                    <p>Una colaboración épica entre FromSoftware y George R. R. Martin. Combina dificultad, lore y mundo
+                        abierto de forma magistral.</p>
+                    <p class="estrellas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </p>
+                </div>
+            </a>
+
+            <a href="https://www.metacritic.com/game/hollow-knight/" class="tarjeta">
+                <img src="images/videojuego3.jpg" alt="Portada de Hollow Knight" class="portada" />
+                <div class="contenido-reseña">
+                    <h2>Hollow Knight</h2>
+                    <p>Un metroidvania oscuro y desafiante con un arte 2D hermoso y una ambientación melancólica que te
+                        atrapa desde el primer momento.</p>
+                    <p class="estrellas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </p>
+                </div>
+            </a>
         </section>
+
 
         <p style="margin-top: 28px;">
             <a href="index.html" class="boton-regreso"><i class="fa-solid fa-arrow-left"></i> Volver al inicio</a>
         </p>
     </main>
+
+    <script>
+        document.addEventListener("readystatechange", () => {
+            if (document.readyState === "interactive" || document.readyState === "complete") {
+                const toggle = document.getElementById("menu-toggle");
+                if (toggle) toggle.checked = false;
+            }
+        });
+    </script>
+
 </body>
 
 </html>

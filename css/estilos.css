@@ -277,7 +277,7 @@ body {
     z-index: 1000;
   }
 
-  .menu-toggle:checked~.sidebar {
+  input.menu-toggle:checked~aside.sidebar {
     left: 0;
   }
 
@@ -344,7 +344,7 @@ body {
     z-index: 1000;
   }
 
-  .menu-toggle:checked~.sidebar {
+  input.menu-toggle:checked~aside.sidebar {
     left: 0;
   }
 
@@ -419,7 +419,7 @@ body {
 }
 
 @media (max-width: 375px) {
-  .contenido header h1{
+  .contenido header h1 {
     margin-left: 45px;
   }
 }

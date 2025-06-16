@@ -10,73 +10,91 @@
 </head>
 
 <body>
-    <div class="dashboard">
-        <aside class="sidebar">
-            <h2>Reseñas</h2>
-            <nav>
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
-                    <li><a href="libros.html"><i class="fas fa-book"></i> Libros</a></li>
-                    <li><a href="peliculas.html"><i class="fas fa-film"></i> Películas</a></li>
-                    <li><a href="videojuegos.html"><i class="fas fa-gamepad"></i> Videojuegos</a></li>
-                </ul>
-            </nav>
-        </aside>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="btn-menu" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+    </label>
+    <aside class="sidebar">
+        <h2>Reseñas</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="libros.html"><i class="fas fa-book"></i> Libros</a></li>
+                <li><a href="peliculas.html"><i class="fas fa-film"></i> Películas</a></li>
+                <li><a href="videojuegos.html"><i class="fas fa-gamepad"></i> Videojuegos</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-        <main class="contenido">
+    <main class="contenido">
+        <header>
             <h1>Reseñas de Películas</h1>
             <p>Descubre algunas de las películas más populares y recomendadas del último tiempo.</p>
+        </header>
 
-            <section class="reseña-destacada">
+        <section class="tarjetas-destacadas">
+            <a href="https://www.imdb.com/title/tt15239678/" class="tarjeta">
                 <img src="images/pelicula1.jpg" alt="Portada de Dune Parte Dos" />
                 <div class="contenido-reseña">
                     <h3>Dune: Parte Dos</h3>
                     <p>Una épica secuela que combina acción, política y una visión cinematográfica impresionante. La
                         historia se profundiza mientras Paul Atreides lidera la rebelión en el desierto de Arrakis.</p>
-                    <p class="estrellas"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
-                            class="fa-solid fa-star"></i>
+                    <p class="estrellas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                     </p>
-                    <a href="https://www.imdb.com/title/tt15239678/" target="_blank" class="enlace">Ver en IMDb</a>
                 </div>
-            </section>
+            </a>
 
-            <section class="lista-reseñas">
-                <div class="reseña-lista">
-                    <img src="images/pelicula2.jpg" alt="Portada de Oppenheimer" />
-                    <div>
-                        <h3>Oppenheimer</h3>
-                        <p>La historia del creador de la bomba atómica, contada con intensidad por Christopher Nolan.
-                            Una obra profunda y visualmente poderosa.</p>
-                        <p class="estrellas"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                        </p>
-                        <a href="https://www.imdb.com/title/tt15398776/" target="_blank" class="enlace">Ver en IMDb</a>
-                    </div>
+            <a href="https://www.imdb.com/title/tt15398776/" class="tarjeta">
+                <img src="images/pelicula2.jpg" alt="Portada de Oppenheimer" />
+                <div>
+                    <h3>Oppenheimer</h3>
+                    <p>La historia del creador de la bomba atómica, contada con intensidad por Christopher Nolan.
+                        Una obra profunda y visualmente poderosa.</p>
+                    <p class="estrellas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </p>
                 </div>
+            </a>
 
-                <div class="reseña-lista">
-                    <img src="images/pelicula3.jpg" alt="Portada de Spider-Man Across the Spider-Verse" />
-                    <div>
-                        <h3>Spider-Man: Across the Spider-Verse</h3>
-                        <p>Una joya de la animación que expande el multiverso de Spider-Man. Acción, emoción y
-                            creatividad visual al máximo.</p>
-                        <p class="estrellas"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
-                        </p>
-                        <a href="https://www.imdb.com/title/tt9362722/" target="_blank" class="enlace">Ver en IMDb</a>
-                    </div>
+            <a href="https://www.imdb.com/title/tt9362722/" class="tarjeta">
+                <img src="images/pelicula3.jpg" alt="Portada de Spider-Man Across the Spider-Verse" />
+                <div>
+                    <h3>Spider-Man: Across the Spider-Verse</h3>
+                    <p>Una joya de la animación que expande el multiverso de Spider-Man. Acción, emoción y
+                        creatividad visual al máximo.</p>
+                    <p class="estrellas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </p>
                 </div>
-            </section>
+            </a>
+        </section>
 
-            <p style="margin-top: 28px;">
-                <a href="index.html" class="boton-regreso"><i class="fa-solid fa-arrow-left"></i> Volver al inicio</a>
-            </p>
-        </main>
+        <p style="margin-top: 28px;">
+            <a href="index.html" class="boton-regreso"><i class="fa-solid fa-arrow-left"></i> Volver al inicio</a>
+        </p>
+    </main>
+    <script>
+        document.addEventListener("readystatechange", () => {
+            if (document.readyState === "interactive" || document.readyState === "complete") {
+                const toggle = document.getElementById("menu-toggle");
+                if (toggle) toggle.checked = false;
+            }
+        });
+    </script>
 
-    </div>
 </body>
 
 </html>
